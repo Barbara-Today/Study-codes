@@ -16,7 +16,8 @@ def binary_search(list, item):
     return None
   ```
 ## Trying the function
-
+```
 my_list = list(range(1,100,2))
     
 print(binary_search(my_list, 7))
+```
