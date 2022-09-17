@@ -49,5 +49,6 @@ def selection_sort_largest(arr):
     return new_arr
 ```
 ### Let's try
+```
 print(selection_sort_largest(my_list))
 ```
