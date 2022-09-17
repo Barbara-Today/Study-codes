@@ -1,3 +1,6 @@
+## Binary search function
+
+```
 def binary_search(list, item):
     low = 0
     high = len(list)-1
@@ -11,8 +14,9 @@ def binary_search(list, item):
         else:
             low = mid + 1
     return None
+  ```
+## Trying the function
+
+my_list = list(range(1,100,2))
     
-    
-    my_list = list(range(1,100,2))
-    
-    print(binary_search(my_list, 7))
+print(binary_search(my_list, 7))
