@@ -1,4 +1,5 @@
-## Summ using recursion
+# Recursion examples
+## Summ
 ```
 def summ_new(arr):
     if arr==[]:
@@ -10,7 +11,7 @@ my_list = [7, 6, 5, 3, 9]
 print(summ_new(my_list))
 ```
 
-## Count how many elements are in the list
+## Count the elements from the list
 ```
 def count(arr):
     if arr == []:
@@ -32,4 +33,18 @@ def largest(arr):
 ```
 my_list = [7, 6, 5, 3, 9]
 print(largest(my_list))
+```
+## Binary search
+```
+def binary_search_recursive(arr, elem):
+    mid = len(arr) // 2
+    if elem == arr[mid]:
+        return mid
+    if elem < arr[mid]:
+        return binary_search_recursive(arr, elem, mid-1)
+    else:
+        return binary_search_recursive(arr, elem, mid+1)
+```
+```
+print(binary_search_recursive(my_list, 5))
 ```
