@@ -104,7 +104,7 @@ names(centroids)[names(centroids)=='c(1, 2, 3, 4, 5)'] = 'cluster'
     
 
 
-# fetures of 5 clients segments
+# Features of 5 clients segments
 
 
 ```R
@@ -155,7 +155,7 @@ ggplot(pivot_longer(centroids2, cols = c(Sila, Lovkost, Vinoslivost, Intellect, 
   facet_grid(rows = vars(cluster))
 ```
 
-
+## Proportion of each cluster
 ```R
 ## pie chart
 ## with 5 clusters
@@ -170,7 +170,7 @@ clust_numb_10 <- c(length(which(kmeans2$cluster == "1")),length(which(kmeans2$cl
 clust_numb_10 <- clust_numb_10/5000*100
 pie(clust_numb_10, labels = paste(c(1,2,3,4,5,6,7,8,9,10), 'cluster', '-',clust_numb_10, sep = ' ', '%'))
 ```  
-
+![png](client segmente.png)
 
 ## What are the preferences of the clients?
 
