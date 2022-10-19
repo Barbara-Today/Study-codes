@@ -290,4 +290,3 @@ grid.arrange(plot1, plot2, plot3, plot4, plot5, plot6, plot7, ncol=3)
     
 ![png](output_23_1.png)
     
-
